@@ -8,18 +8,18 @@ import java.time.LocalDate;
  */
 public class Naissance {
 	long annee;
-	LocalDate dateEvemenent;
+	LocalDate dateEvenement;
 	long nombre;
 	
 	/**Constructor
 	 * @param annee
-	 * @param dateEvemenent
+	 * @param dateEvenement
 	 * @param nombre
 	 */
-	public Naissance(long annee, LocalDate dateEvemenent, long nombre) {
+	public Naissance(long annee, LocalDate dateEvenement, long nombre) {
 		super();
 		this.annee = annee;
-		this.dateEvemenent = dateEvemenent;
+		this.dateEvenement = dateEvenement;
 		this.nombre = nombre;
 	}
 	/**Getter
@@ -31,8 +31,8 @@ public class Naissance {
 	/**Getter
 	 * @return the dateEvemenent
 	 */
-	public LocalDate getDateEvemenent() {
-		return dateEvemenent;
+	public LocalDate getDateEvenement() {
+		return dateEvenement;
 	}
 	/**Getter
 	 * @return the nombre
@@ -49,8 +49,8 @@ public class Naissance {
 	/**Setter
 	 * @param dateEvemenent the dateEvemenent to set
 	 */
-	public void setDateEvemenent(LocalDate dateEvemenent) {
-		this.dateEvemenent = dateEvemenent;
+	public void setDateEvenement(LocalDate dateEvenement) {
+		this.dateEvenement = dateEvenement;
 	}
 	/**Setter
 	 * @param nombre the nombre to set
@@ -59,5 +59,7 @@ public class Naissance {
 		this.nombre = nombre;
 	}
 	
-	
+	public String toString() {
+		return annee+" "+dateEvenement.toString()+" "+nombre;
+	}
 }
